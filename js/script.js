@@ -55,3 +55,20 @@ function updatePrice(itemId, price){
     const total = document.getElementById("total-price");
     total.innerText = totalPrice;
 }
+
+const fakeCode = "phero";
+document.getElementById("apply-btn").addEventListener("click", function(){
+
+    const code = document.getElementById("promo-input").value;
+    if(code === fakeCode){
+        const total = document.getElementById("total-price");
+        const totalPrice = parseFloat(total.innerText);
+
+        const discount = totalPrice * .2;
+        const newPrice = totalPrice - discount;
+        total.innerText = newPrice;
+    }
+    else{
+        console.log('false');
+    }
+});
