@@ -34,6 +34,7 @@ function onClick(clickId, updateId, price){
     document.getElementById(clickId).addEventListener('click', function () {
 
         updatePrice(updateId, price);
+        document.getElementById(clickId).style.backgroundColor = "lightblue"
     });
 }
 
