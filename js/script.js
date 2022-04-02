@@ -20,13 +20,14 @@
 }); */
 
 
-onclick("sixteenGB", "memory-cost", 300);
-onclick("eightGB", "memory-cost", 0);
-onclick("ssd1", "storage-cost", 0);
-onclick("ssd2", "memory-cost", 200);
-// onclick("sixteenGB", "memory-cost", 300);
-// onclick("sixteenGB", "memory-cost", 300);
-// onclick("sixteenGB", "memory-cost", 300);
+onClick("sixteenGB", "memory-cost", 300);
+onClick("eightGB", "memory-cost", 0);
+onClick("ssd1", "storage-cost", 0);
+onClick("ssd2", "storage-cost", 200);
+onClick("ssd3", "storage-cost", 350);
+onClick("free-delivery", "delivery-cost", 0);
+onClick("paid-delivery", "delivery-cost", 20);
+
 
 function onClick(clickId, updateId, price){
 
